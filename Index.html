@@ -8,20 +8,21 @@
 </head>
 <body>
 
-<div>
+<div id="firstPage">
     <h1 class="text-center">Welcome to Pioneer Bank</h1>
     <div class="submit-area">
         <h3>login</h3>
-        <input type="text" class="form-control">
+        <input type="text" class="form-control" placeholder="Email ID">
         <br>
-        <input type="password" class="form-control">
+        <input type="password" class="form-control" placeholder="Password">
         <br>
         <submit id="login" class="btn btn-success">Enter</submit>
     </div>
     <script>
         const  loginbtn = document.getElementById("login");
         loginbtn.addEventListener("click", function () {
-            console.log("What is life");
+            const loinIN = document.getElementById("firstPage");
+            loinIN.style.display = "none";
         })
     </script>
 
